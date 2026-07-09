@@ -33,7 +33,7 @@ const CONTENT = {
       stats: [
         { num: '30', sup: '年', lbl: '深耕帽饰' },
         { num: '7,000', sup: '', lbl: '馆藏件数' },
-        { num: '300', sup: '亿', lbl: '帽子产量' }
+        { num: '3', sup: '亿', lbl: '帽子产量' }
       ],
       scroll: '向下浏览'
     }
@@ -187,7 +187,7 @@ const CONTENT = {
       number: '07 / 富美集团',
       heading: '一家以文化引领的<em>时尚</em>企业。',
       stats: [
-        { num: '300', sup: '亿', lbl: '帽子产量', desc: '三十年间，设计与制造的累计产出。' },
+        { num: '3', sup: '亿', lbl: '帽子产量', desc: '三十年间，设计与制造的累计产出。' },
         { num: '1,200', sup: '+', lbl: '合作伙伴', desc: '覆盖全球品牌、零售商与创意合作方。' },
         { num: '4,000', sup: '+', lbl: '年新款', desc: '由 20 人的设计团队，开发季节性款式与系列。' },
         { num: '6', sup: '', lbl: '生产基地', desc: '中国 · 越南 · 柬埔寨——均衡的全球布局。' }
@@ -209,7 +209,7 @@ const CONTENT = {
         { head: 'Studio', body: 'Foremost Hat Park<br/>Nantong, Jiangsu<br/>China' },
         { head: 'Email', body: '<a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>' },
         { head: 'Museum', body: 'Foremost Hat Museum<br/>Open Tue – Sun · 10–18' },
-        { head: 'Festival', body: '920 China Hats Festival<br/>September 20, annual' }
+        { head: 'Festival', body: '920 China Hat Festival<br/>September 20, annual' }
       ],
       footL: '© 2026 Jeffrey Sun · 帽子哥',
       footR: 'Designed in Shanghai'
@@ -276,7 +276,7 @@ const CONTENT = {
           ]
         },
         {
-          t: 'Ecuador: The Home of Panama Hat', sub: '《厄瓜多尔·巴拿马草帽的故乡》', meta: 'By Jeffrey Sun & Zhou Wei', src: 'assets/book-ecuador.webp', year: '2018',
+          t: 'Ecuador: The Hometown of Panama Hats', sub: '《厄瓜多尔·巴拿马草帽的故乡》', meta: 'By Jeffrey Sun & Zhou Wei', src: 'assets/book-ecuador.webp', year: '2018',
           publisher: 'Foremost Press · 富美出版', pages: '288 pp.', format: 'Hardcover · 22 × 28 cm',
           tagline: 'Six weeks in the Andes, with the weavers who make the world’s finest straw hats.',
           body: 'Jeffrey Sun and Zhou Wei spent six weeks in Cuenca and the highland villages of Azuay, documenting the toquilla-straw weavers whose craft predates the name "Panama hat" by three centuries. The book pairs reportage with technical drawings of weaves and a glossary of regional terminology.',
@@ -309,7 +309,7 @@ const CONTENT = {
       eyebrow: '出版著作',
       number: '02 / 书作',
       heading: '一座「<em>帽饰</em>」的纸上博物馆。',
-      legend: '已出版四部著作——从厄瓜多尔高原到帽汿的哲学。另有《道德经》译读，即将面世。',
+      legend: '已出版四部著作——从厄瓜多尔高原到帽缘的哲学。另有《道德经》译读，即将面世。',
       items: [
         {
           t: '《顶南风华》', sub: 'Unveiling Crowned Elegance', meta: '孙建华 主编', src: 'assets/book-elegance.webp', year: '2022',
@@ -348,7 +348,7 @@ const CONTENT = {
           ]
         },
         {
-          t: '《厄瓜多尔：巴拿马草帽的故乡》', sub: 'Ecuador: The Home of Panama Hat', meta: '孙建华 · 周伟 著', src: 'assets/book-ecuador.webp', year: '2018',
+          t: '《厄瓜多尔：巴拿马草帽的故乡》', sub: 'Ecuador: The Hometown of Panama Hats', meta: '孙建华 · 周伟 著', src: 'assets/book-ecuador.webp', year: '2018',
           publisher: '富美出版', pages: '288 页', format: '精装 · 22 × 28 cm',
           tagline: '在安第斯山脉的六周——与世界上最精致草编帽的编织者同行。',
           body: '孙建华与周伟在昆卡及阿苏艾省的高地村落驻留六周，记录托基亚草编织者——他们的技艺比"巴拿马帽"这个名字早了三个世纪。书中报道、技术图解与地方术语词汇并置。',

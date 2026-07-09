@@ -128,7 +128,7 @@ function Hero({ lang }) {
             <div className="hero-portrait-caption">
               <div className="name-en">Jeffrey Sun</div>
               <div className="name-zh">孙建华 · 帽子哥</div>
-              <div className="title-tag">{lang === 'en' ? 'The most influential figure in Chinese hat culture' : '中国帽饰文化最具影响力人物'}</div>
+              <div className="title-tag">{lang === 'en' ? 'The most influential figure in Chinese headwear culture' : '中国帽饰文化最具影响力人物'}</div>
             </div>
           </div>
         </div>
@@ -189,7 +189,7 @@ function About({ lang }) {
             </div>
             <div className="about-index-row">
               <span className="k">{lang === 'en' ? 'Honoured' : '荣誉'}</span>
-              <span className="v">{lang === 'en' ? 'Most Influential Figure in Chinese Hat Culture · 2018' : '中国帽饰文化最具影响力人物 · 2018'}</span>
+              <span className="v">{lang === 'en' ? 'Most Influential Figure in Chinese Headwear Culture · 2018' : '中国帽饰文化最具影响力人物 · 2018'}</span>
             </div>
             <div className="about-index-row">
               <span className="k">{lang === 'en' ? 'Pursuits' : '志趣'}</span>
