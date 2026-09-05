@@ -99,62 +99,47 @@ function Nav({ lang, setLang, scrolled, activeSection }) {
 }
 
 function Hero({ lang }) {
+  // 扉页:签名当标题,题词一句,手册里他自己的自述一段,肖像平放成版画。
+  // 不用「三行大标题 + 一个词标色 + 数据格」那套落地页语法。
   const h = CONTENT.hero[lang];
   return (
-    <section id="top" className="hero">
-      <span className="scroll-cue" hidden style={{ display: 'none' }}>{h.scroll} ↓</span>
-      <div className="container">
-        <div className="hero-top">
-          <div className="hero-meta">
-            <div><span>{h.eyebrowL}</span></div>
-            <div><span>{h.eyebrowR}</span></div>
-            <div><span>{h.since}</span></div>
-          </div>
-          <div className="hero-meta">
-            <div><strong>{h.role}</strong></div>
-          </div>
-        </div>
-
-        <div className="hero-main">
-          <h1 className="hero-title">
-            <span className="row">{h.title1}<span className="small"> ¹⁹⁹⁶</span></span>
-            <span className="row indent"><em>{h.title2Em}</em></span>
-            <span className="row">{h.title3}.</span>
+    <section id="top" className="hero hero-page">
+      <div className="container hero-grid">
+        <div className="hero-copy">
+          <div className="hero-kicker">{h.kicker}</div>
+          <h1 className="hero-sig">
+            <img src="assets/hero/signature.png" alt="孙建华 · 手写签名" fetchpriority="high" />
+            <span className="sr-only">孙建华 Jeffrey Sun</span>
           </h1>
-          <div className="hero-portrait">
-            <div className="hero-portrait-img">
-              <img src="assets/jeffrey-portrait.webp" alt="Jeffrey Sun · 帽子哥" fetchpriority="high" />
-            </div>
-            <div className="hero-portrait-caption">
-              <div className="name-en">Jeffrey Sun</div>
-              <div className="name-zh">孙建华 · 帽子哥</div>
-              <div className="title-tag">{lang === 'en' ? 'The most influential figure in Chinese headwear culture' : '中国帽饰文化最具影响力人物'}</div>
-            </div>
+          <div className="hero-names">
+            <span className="n-en">Jeffrey Sun</span>
+            <span className="n-sep">·</span>
+            <span className="n-zh">{h.nick}</span>
           </div>
-        </div>
-
-        <div className="hero-bottom">
-          <p className="hero-tagline">{h.tagline}</p>
-          <div className="hero-stats">
-            {h.stats.map((s, i) =>
-            <div className="hero-stat" key={i}>
-                <div className="num">{s.num}{s.sup && <sup>{s.sup}</sup>}</div>
-                <div className="lbl">{s.lbl}</div>
-              </div>
-            )}
-          </div>
-          <div className="hero-cta">
+          <p className="hero-motto">{h.motto}</p>
+          <p className="hero-motto-sub">{h.mottoSub}</p>
+          <p className="hero-bio">{h.bio}</p>
+          <div className="hero-foot">
+            <span className="hero-place">{h.place}</span>
             <a href="#about" className="hero-scroll">
-              <span>{lang === 'en' ? 'Begin' : '入'}</span>
+              <span>{h.scroll}</span>
               <span className="arrow" />
             </a>
           </div>
         </div>
+        <figure className="hero-plate">
+          <div className="hero-plate-img">
+            <img src="assets/jeffrey-portrait.webp" alt="Jeffrey Sun · 帽子哥" fetchpriority="high" />
+          </div>
+          <figcaption>
+            <span>{h.plateCap}</span>
+            <span className="cap-sub">{h.plateSub}</span>
+          </figcaption>
+        </figure>
       </div>
     </section>);
 
 }
-
 function About({ lang }) {
   const a = CONTENT.about[lang];
   return (

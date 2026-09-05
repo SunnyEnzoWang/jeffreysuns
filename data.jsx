@@ -4,38 +4,32 @@ const CONTENT = {
     en: { about: 'About', art: 'Art', works: 'Works', philosophy: 'Philosophy', books: 'Books', photography: 'Photo', industry: 'Industry', contact: 'Contact' },
     zh: { about: '关于', art: '雕塑', works: '作品', philosophy: '哲思', books: '著作', photography: '摄影', industry: '产业', contact: '联系' }
   },
+  // 首屏文案全部取自孙董自己的材料:
+  //  · kicker「Who is Hat Brother?」= 他印刷版个人手册第 1 页
+  //  · motto「以帽立业。以道立心。」= 《道德经》译本自我介绍页;英文一句同页
+  //  · bio = 手册第 3 页原文,中英均为原文,未改一字
   hero: {
     en: {
-      eyebrowL: 'Sculptor · Author · Founder',
-      eyebrowR: 'Based in Shanghai · CN',
-      since: 'Since 1996',
-      role: 'Hat Brother',
-      title1: 'A life',
-      title2Em: 'between',
-      title3: 'hats & DAO',
-      tagline: 'Letting DAO empower art, and art return to DAO — a quiet conversation between making and meaning.',
-      stats: [
-        { num: '30', sup: 'yrs', lbl: 'In headwear' },
-        { num: '7,000', sup: '', lbl: 'Museum pieces' },
-        { num: '300', sup: 'M', lbl: 'Hats produced' }
-      ],
-      scroll: 'Scroll to enter'
+      kicker: 'Who is Hat Brother?',
+      nick: '帽子哥 · Hat Brother',
+      motto: '以帽立业。以道立心。',
+      mottoSub: 'To harmonize industry, art, fashion, philosophy, philanthropy, and cultural collecting into one meaningful life.',
+      bio: 'Passionate about fashion, art, collecting, reading, photography, and global travel, he embraces the beauty of life and treats others with integrity and sincerity. As the founder of his enterprise and the creator of the Hat Museum, he has long been deeply rooted in the world of headwear, dedicated to advancing hat culture and contributing to the global headwear industry. He believes a hat is not merely an accessory, but the beginning of style itself — and through its cultural power, the world becomes better and more beautiful.',
+      place: 'Shanghai · China',
+      scroll: 'Enter',
+      plateCap: 'The most influential figure in Chinese hat culture',
+      plateSub: 'China National Garment Association · 2018'
     },
     zh: {
-      eyebrowL: '雕塑家 · 作者 · 创始人',
-      eyebrowR: '常驻上海',
-      since: '1996 年至今',
-      role: '帽子哥',
-      title1: '于产业',
-      title2Em: '与道',
-      title3: '之间',
-      tagline: '让道赋能艺术，让艺术回归道——在创造与意义之间，进行一场安静的对话。',
-      stats: [
-        { num: '30', sup: '年', lbl: '深耕帽饰' },
-        { num: '7,000', sup: '', lbl: '馆藏件数' },
-        { num: '3', sup: '亿', lbl: '帽子产量' }
-      ],
-      scroll: '向下浏览'
+      kicker: 'Who is Hat Brother?',
+      nick: '帽子哥',
+      motto: '以帽立业。以道立心。',
+      mottoSub: '愿将产业、艺术、时尚、哲学、慈善、文化收藏，融汇于一生。',
+      bio: '热爱时尚、艺术、收藏、读书、摄影与环球旅行，倾心世间一切美好。诚信待人，始终坚守初心与温度。作为企业创始人、帽饰博物馆的创立者，深耕于帽饰领域，矢志传播帽饰文化，致力打造世界一流的品牌。他坚信「帽饰是第一时尚单品」，将帽饰与艺术融合，为人们的生活增添美好。',
+      place: '上海 · 中国',
+      scroll: '入',
+      plateCap: '中国帽饰文化最具影响力人物',
+      plateSub: '中国服装协会 · 2018'
     }
   },
   about: {
