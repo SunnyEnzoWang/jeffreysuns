@@ -2373,3 +2373,9 @@ section {
 @media (max-width: 600px) {
   .section-head h2 { font-size: 26px; }
 }
+
+/* 扉页肖像改用影棚照:矩形版画,不再套纸卡,只留一道细线 */
+.hero-plate-img { padding: 0; background: none; box-shadow: inset 0 0 0 1px rgba(14,14,16,.10); }
+.hero-plate-img img { aspect-ratio: 2 / 3; object-fit: cover; }
+.hero-plate { max-width: 340px; }
+@media (max-width: 920px) { .hero-plate { max-width: 230px; } }

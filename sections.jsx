@@ -129,7 +129,7 @@ function Hero({ lang }) {
         </div>
         <figure className="hero-plate">
           <div className="hero-plate-img">
-            <img src="assets/jeffrey-portrait.webp" alt="Jeffrey Sun · 帽子哥" fetchpriority="high" />
+            <img src="assets/hero/portrait.jpg" alt="孙建华 · Jeffrey Sun，黑白影棚肖像" fetchpriority="high" width="900" height="1350" />
           </div>
           <figcaption>
             <span>{h.plateCap}</span>
