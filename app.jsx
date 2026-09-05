@@ -34,7 +34,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const ids = ['about', 'art', 'works', 'philosophy', 'books', 'photography', 'industry', 'contact'];
+    const ids = ['about', 'festival', 'art', 'works', 'philosophy', 'books', 'photography', 'industry', 'contact'];
     const io = new IntersectionObserver((entries) => {
       entries.forEach((e) => {
         if (e.isIntersecting) setActiveSection(e.target.id);
@@ -52,6 +52,7 @@ function App() {
       <Nav lang={lang} setLang={setLang} scrolled={scrolled} activeSection={activeSection} />
       <Hero lang={lang} />
       <About lang={lang} />
+      <Festival lang={lang} />
       <Books lang={lang} />
       <Works lang={lang} onOpen={setLbItem} />
       <Philosophy lang={lang} />

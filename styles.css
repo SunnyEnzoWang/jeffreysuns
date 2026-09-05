@@ -1878,7 +1878,19 @@ section {
   font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em;
   color: rgba(14,14,16,0.5);
 }
-.po-cover--book { aspect-ratio: 3/4; max-width: 480px; margin-left: auto; margin-right: auto; }
+/* 书封:按封面原比例完整显示,像一本放在桌上的书;不裁切、不满铺
+   (此前 margin-left/right:auto 在手机上把左右留白吃光,3/4 裁切又切掉封面) */
+.po-cover--book {
+  aspect-ratio: auto; max-width: none;
+  width: min(360px, calc(100% - 48px)); margin: 8px auto 0;
+  background: transparent; border-radius: 3px; overflow: visible;
+}
+.po-cover--book img {
+  width: 100%; height: auto; object-fit: contain; border-radius: 3px;
+  box-shadow: 0 28px 48px -30px rgba(14,14,16,0.6), 0 1px 0 rgba(14,14,16,0.08);
+}
+.po-source { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; color: rgba(14,14,16,0.5); margin-top: 18px; }
+.po-essay + .po-essay { margin-top: 1em; }
 .po-chapters { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: clamp(12px, 1.5vw, 24px); }
 .po-chapter { display: flex; gap: 14px; padding: 18px 0; border-top: 1px solid var(--line); }
 .po-ch-num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.2em; color: rgba(14,14,16,0.45); padding-top: 4px; }
@@ -2379,3 +2391,47 @@ section {
 .hero-plate-img img { aspect-ratio: 2 / 3; object-fit: cover; }
 .hero-plate { max-width: 340px; }
 @media (max-width: 920px) { .hero-plate { max-width: 230px; } }
+
+
+.dao-body + .dao-body { margin-top: 1em; }
+.dao-source { color: rgba(244,240,232,.5); }
+
+/* ---------- 920 帽子节:暗场舞台上的预热 ----------
+   底图 = 2023 年第四届现场(剪影、无正脸)。数字 920 用 Cormorant 细体放到版心那么大,
+   倒计时、历届与联络分三栏;手机上叠成一栏。 */
+.festival { position: relative; padding: clamp(80px, 12vw, 140px) 0; background: var(--ink); color: var(--paper); overflow: hidden; }
+.festival-bg { position: absolute; inset: 0; z-index: 0; }
+.festival-bg img { width: 100%; height: 100%; object-fit: cover; opacity: .55; filter: saturate(.55) contrast(1.05); }
+.festival-bg::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(14,14,16,.38) 0%, rgba(14,14,16,.74) 55%, var(--ink) 100%); }
+.festival-in { position: relative; z-index: 1; }
+.festival .section-head { border-top-color: rgba(244,240,232,.18); }
+.festival .eyebrow, .festival .label-num { color: rgba(244,240,232,.55); }
+.festival .section-head h2 { color: var(--paper); }
+.festival .section-head h2 em { color: var(--paper); opacity: .72; }
+.festival-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 4fr) minmax(0, 3fr); gap: clamp(24px, 4vw, 64px); align-items: start; }
+.festival-num { font-family: var(--serif); font-weight: 300; font-size: clamp(120px, 17vw, 300px); line-height: .8; letter-spacing: -0.06em; color: var(--paper); opacity: .92; margin-top: -0.04em; }
+.festival-date { font-family: var(--mono); font-size: 11px; letter-spacing: .22em; text-transform: uppercase; color: rgba(244,240,232,.6); margin-bottom: 18px; }
+.festival-count { display: flex; align-items: baseline; gap: 14px; margin-bottom: 28px; }
+.festival-count .n { font-family: var(--serif); font-size: clamp(64px, 8vw, 120px); line-height: .9; font-weight: 300; letter-spacing: -0.03em; }
+.festival-count .l { font-family: var(--mono); font-size: 12px; letter-spacing: .2em; text-transform: uppercase; color: rgba(244,240,232,.65); }
+.festival-count .l.big { font-family: var(--serif); font-size: clamp(28px, 3vw, 40px); text-transform: none; letter-spacing: 0; color: var(--paper); }
+.festival-lead { font-family: var(--serif); font-size: clamp(18px, 1.5vw, 22px); line-height: 1.55; color: rgba(244,240,232,.9); max-width: 44ch; margin: 0 0 28px; }
+.festival-lead strong { font-weight: 600; color: var(--paper); }
+.festival-quote { margin: 0; font-family: var(--serif); font-style: italic; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.35; color: var(--paper); max-width: 40ch; }
+.festival-quote cite { display: block; margin-top: 12px; font-style: normal; font-family: var(--mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: rgba(244,240,232,.55); }
+.festival-hist-head { font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: rgba(244,240,232,.55); padding-bottom: 10px; border-bottom: 1px solid rgba(244,240,232,.18); }
+.festival-hist { list-style: none; margin: 0 0 22px; padding: 0; }
+.festival-hist li { display: grid; grid-template-columns: 64px 1fr; gap: 12px; padding: 12px 0; border-bottom: 1px solid rgba(244,240,232,.12); font-family: var(--serif); font-size: 17px; color: rgba(244,240,232,.78); }
+.festival-hist li .y { font-family: var(--mono); font-size: 12px; letter-spacing: .12em; color: rgba(244,240,232,.55); padding-top: 3px; }
+.festival-hist li.now, .festival-hist li.now .y { color: var(--paper); }
+.festival-hist li.now .t::before { content: '●'; font-size: 8px; vertical-align: middle; margin-right: 8px; color: #E24B3A; }
+.festival-note { font-family: var(--sans); font-size: 13px; line-height: 1.6; color: rgba(244,240,232,.62); margin: 0 0 18px; }
+.festival-note a { color: var(--paper); text-decoration: underline; text-underline-offset: 3px; }
+.festival-cta { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--paper); border: 1px solid rgba(244,240,232,.5); padding: 12px 16px; text-decoration: none; transition: background .2s, color .2s; }
+.festival-cta:hover { background: var(--paper); color: var(--ink); }
+.festival-init { margin-top: 18px; font-family: var(--mono); font-size: 11px; letter-spacing: .18em; text-transform: uppercase; color: rgba(244,240,232,.5); }
+.festival-cap { margin-top: clamp(40px, 6vw, 80px); font-family: var(--mono); font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: rgba(244,240,232,.45); }
+@media (max-width: 900px) {
+  .festival-grid { grid-template-columns: 1fr; gap: 28px; }
+  .festival-num { font-size: clamp(96px, 28vw, 160px); }
+}

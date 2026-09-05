@@ -5,6 +5,7 @@ function Nav({ lang, setLang, scrolled, activeSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const links = [
   { k: 'about', label: t.about },
+  { k: 'festival', label: t.festival },
   { k: 'books', label: t.books },
   { k: 'works', label: t.works },
   { k: 'philosophy', label: t.philosophy },
@@ -573,7 +574,8 @@ function Books({ lang }) {
             <div className="dao-kicker">{b.forthcoming.kicker}</div>
             <h3 className="dao-title">{b.forthcoming.title}</h3>
             <div className="dao-subtitle">{b.forthcoming.subtitle}</div>
-            <p className="dao-body">{b.forthcoming.body}</p>
+            {(Array.isArray(b.forthcoming.body) ? b.forthcoming.body : [b.forthcoming.body]).map((para, j) => <p className="dao-body" key={j}>{para}</p>)}
+            {b.forthcoming.source && <div className="po-source dao-source">{b.forthcoming.source}</div>}
             <ul className="dao-lines">
               {b.forthcoming.lines.map((l, i) =>
               <li key={i}>
@@ -669,7 +671,10 @@ function Books({ lang }) {
                 {item.pages && <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Pages' : '页数'}</span><span className="po-meta-v">{item.pages}</span></div>}
                 {item.format && <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Format' : '装帧'}</span><span className="po-meta-v">{item.format}</span></div>}
               </div>
-              {item.body && <p className="po-essay">{item.body}</p>}
+              {item.body && <div className="po-essay-col">
+                {(Array.isArray(item.body) ? item.body : [item.body]).map((para, j) => <p className="po-essay" key={j}>{para}</p>)}
+                {item.source && <div className="po-source">{item.source}</div>}
+              </div>}
             </div>
             {item.chapters && item.chapters.length > 0 &&
             <div className="po-frames">
@@ -878,4 +883,57 @@ function Contact({ lang }) {
 
 }
 
-Object.assign(window, { Nav, Hero, About, Feature, Works, Philosophy, Books, Photography, Industry, Contact });
+
+// ── 920 中国帽子节:预热 ────────────────────────────────────
+// 倒计时按北京时间算日历天数:把「现在」拨到东八区再取年月日
+function daysUntilBeijing(iso) {
+  const bj = new Date(Date.now() + 8 * 3600e3);
+  const today = Date.UTC(bj.getUTCFullYear(), bj.getUTCMonth(), bj.getUTCDate());
+  const [y, m, d] = iso.split('-').map(Number);
+  return Math.round((Date.UTC(y, m - 1, d) - today) / 86400e3);
+}
+
+function Festival({ lang }) {
+  const f = CONTENT.festival[lang];
+  const [days, setDays] = React.useState(() => daysUntilBeijing(f.dateISO));
+  React.useEffect(() => {
+    const t = setInterval(() => setDays(daysUntilBeijing(f.dateISO)), 60e3);
+    return () => clearInterval(t);
+  }, [f.dateISO]);
+  return (
+    <section id="festival" className="festival" data-screen-label="920">
+      <div className="festival-bg" aria-hidden="true">
+        <img src="assets/festival/stage-2023.jpg" alt="" loading="lazy" decoding="async" />
+      </div>
+      <div className="container festival-in">
+        <SectionHead number={f.number} eyebrow={f.eyebrow} headingHtml={f.heading} />
+        <div className="festival-grid">
+          <div className="festival-num reveal" aria-hidden="true">920</div>
+          <div className="festival-main reveal">
+            <div className="festival-date">{f.dateLine}</div>
+            <div className="festival-count" aria-live="polite">
+              {days > 0
+                ? <><span className="n">{days}</span><span className="l">{f.countLabel}</span></>
+                : <span className="l big">{days === 0 ? f.today : f.past}</span>}
+            </div>
+            <p className="festival-lead"><strong>{f.runin}</strong> {f.lead}</p>
+            <blockquote className="festival-quote">{f.quote}<cite>{f.quoteBy}</cite></blockquote>
+          </div>
+          <div className="festival-side reveal">
+            <div className="festival-hist-head">{f.histHead}</div>
+            <ul className="festival-hist">
+              {f.hist.map((h) =>
+                <li key={h.y} className={h.now ? 'now' : ''}><span className="y">{h.y}</span><span className="t">{h.t}</span></li>
+              )}
+            </ul>
+            <HTML tag="p" className="festival-note" html={f.note} />
+            <a className="festival-cta" href={f.ctaHref} target="_blank" rel="noopener">{f.cta} →</a>
+            <div className="festival-init">{f.initiator}</div>
+          </div>
+        </div>
+        <div className="festival-cap">{f.photoCap}</div>
+      </div>
+    </section>);
+}
+
+Object.assign(window, { Nav, Hero, About, Festival, Feature, Works, Philosophy, Books, Photography, Industry, Contact });
