@@ -227,7 +227,7 @@ const CONTENT = {
     }
   },
   marquee: {
-    en: ['Hat Brother', 'Identity & the Self', '920 China Hat Festival', 'Foremost Group · Since 1996', 'Whispers of Wisdom', 'Letting DAO empower art'],
+    en: ['Hat Brother', 'Identity & the Self', '920 China Hat Festival', 'Foremost Group · Since 1996', 'Imaginative Thoughts', 'Letting DAO empower art'],
     zh: ['帽子哥', '身份与自我', '920 中国帽子节', '富美集团 · 1996', '随心琐语', '让道赋能艺术']
   },
   // 著作数据全部来自孙董自己的出版物:
