@@ -1751,9 +1751,13 @@ section {
   to { opacity: 1; transform: translateY(0); }
 }
 .po-scroll {
-  height: 100vh;
+  /* 不用 100vh:iOS Safari 的 100vh 含底栏高度,最后一截会被工具栏盖住滚不出来;
+     父级是 fixed inset:0,100% 就是真实可视高度 */
+  height: 100%;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 .po-topbar {
   position: sticky;
