@@ -2237,3 +2237,15 @@ section {
 @media (max-width: 720px) {
   .fm-pin .lbl { display: none; }
 }
+
+/* 暂无封面文件的书:退成排版卡片,不显示破图,也不冒充真封面 */
+.book-cover-fallback { display: none; }
+.book-cover--none { display: flex; align-items: center; justify-content: center;
+  background: #efe9dd; box-shadow: inset 0 0 0 1px rgba(20,18,16,.10); }
+.book-cover--none .book-cover-fallback {
+  display: flex; flex-direction: column; gap: 10px; padding: 12% 14%;
+  text-align: center; color: #2a2622;
+}
+.book-cover--none .bcf-t { font-size: 15px; line-height: 1.5; font-weight: 500; }
+.book-cover--none .bcf-s { font-size: 10.5px; letter-spacing: .1em; opacity: .58;
+  font-family: 'JetBrains Mono', ui-monospace, Menlo, monospace; }

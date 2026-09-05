@@ -51,9 +51,11 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>Founder, Foremost Group</strong> — design, R&D, production and distribution of headwear since 1996.' },
-        { n: '02', text: '<strong>Founder, Foremost Hat Museum</strong> — Nantong; 2,000 m² of exhibition, 7,000 collected pieces.' },
-        { n: '03', text: '<strong>Initiator, 920 China Hat Festival</strong> & China International Hat Design Competition.' },
-        { n: '04', text: '<strong>Author</strong> — “Ecuador: The Hometown of Panama Hats”, “Whispers of Wisdom”.' }
+        { n: '02', text: '<strong>Founder &amp; curator, Nantong Foremost Hats Museum</strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
+        { n: '03', text: '<strong>Founder, HATTERS’ HUB</strong> — Shanghai.' },
+        { n: '04', text: '<strong>Director, Hats &amp; Accessories R&amp;D Centre</strong>, China National Garment Association.' },
+        { n: '05', text: '<strong>Initiator, 920 China Hat Festival</strong> &amp; China International Hat Design Competition.' },
+        { n: '06', text: '<strong>Founder, Museum of Embroidery &amp; Lace</strong> — in preparation.' }
       ]
     },
     zh: {
@@ -68,9 +70,11 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>富美集团创始人</strong>——自 1996 年起，深耕帽饰设计、研发、生产与销售。' },
-        { n: '02', text: '<strong>富美帽饰博物馆创办人</strong>——南通；展陈面积 2000 m²，藏品 7000 件。' },
-        { n: '03', text: '<strong>「920 中国帽子节」</strong>及中国国际帽饰设计大赛发起人。' },
-        { n: '04', text: '<strong>著有</strong>《厄瓜多尔：巴拿马草帽的故乡》《随心琐语》。' }
+        { n: '02', text: '<strong>南通市富美帽饰博物馆创办人、馆长</strong>——展陈面积 2000 m²，藏品 7000 件。' },
+        { n: '03', text: '<strong>上海帽仕汇创始人</strong>（HATTERS’ HUB）。' },
+        { n: '04', text: '<strong>中国服装协会帽饰研发中心主任</strong>。' },
+        { n: '05', text: '<strong>「920 中国帽子节」</strong>及中国国际帽饰设计大赛发起人。' },
+        { n: '06', text: '<strong>刺绣与蕾丝博物馆创始人</strong>（筹）。' }
       ]
     }
   },
@@ -232,76 +236,40 @@ const CONTENT = {
     en: ['Hat Brother', 'Identity & the Self', '920 China Hat Festival', 'Foremost Group · Since 1996', 'Whispers of Wisdom', 'Letting DAO empower art'],
     zh: ['帽子哥', '身份与自我', '920 中国帽子节', '富美集团 · 1996', '随心琐语', '让道赋能艺术']
   },
+  // 著作数据全部来自孙董自己的出版物:
+  //  · 书目与英文名取自《顶尚风华》书内作者简介页
+  //  · 「道之钥」两句取自他《道德经》译本第 33 章
+  //  · 出版社/页数/装帧/章节目录原为示意性内容,已删除 —— 未核实的一律不写
   books: {
     en: {
       eyebrow: 'Published Works',
       number: '02 / Books',
       heading: 'A library of <em>headwear</em> aesthetics.',
-      legend: 'Four published volumes — from the highlands of Ecuador to the philosophy of the brim. A fifth, on the Dao De Jing, is on its way.',
+      legend: 'Seven volumes written or edited, and two classical texts carried into English — from the highlands of Ecuador to the philosophy of the brim.',
+      backLabel: 'Back',
+      seriesLabel: 'Books',
+      chaptersLabel: 'Contents',
       items: [
-        {
-          t: 'Unveiling Crowned Elegance', sub: '《顶南风华》', meta: 'Edited by Jeffrey Sun', src: 'assets/book-elegance.webp', year: '2022',
-          publisher: 'Foremost Press · 富美出版', pages: '328 pp.', format: 'Hardcover · 24 × 30 cm',
-          tagline: 'A visual chronicle of crowns, ritual, and the quiet authority of the worn.',
-          body: 'Curated across two years of fieldwork and archival research, this volume traces the lineage of ceremonial headwear across East and Southeast Asia — from imperial court to wedding pavilion. Photography by the Foremost team; essays by historians and contemporary milliners.',
-          chapters: [
-            { n: '01', t: 'Court & Crown', sub: '宫廷与冠冕' },
-            { n: '02', t: 'Ritual Threads', sub: '仪礼之线' },
-            { n: '03', t: 'The Bride’s Headdress', sub: '婚冠之美' },
-            { n: '04', t: 'Modern Reinterpretations', sub: '当代重述' }
-          ]
-        },
-        {
-          t: 'Headwear · The Foremost', sub: '《头等大饰》', meta: 'By Jeffrey Sun', src: 'assets/book-headwear.webp', year: '2021',
-          publisher: 'Foremost Press · 富美出版', pages: '256 pp.', format: 'Hardcover · 21 × 28 cm',
-          tagline: 'A maker’s manifesto — three decades of obsession, brim by brim.',
-          body: 'Part memoir, part technical atlas. Jeffrey Sun walks the reader through the founding of Foremost Group, the discipline of the workshop, and the philosophy that has guided every hat the company has produced. Hand-drawn diagrams accompany each chapter.',
-          chapters: [
-            { n: '01', t: 'Beginnings · 1996', sub: '起点 · 一九九六' },
-            { n: '02', t: 'Material as Argument', sub: '材料即论证' },
-            { n: '03', t: 'The Block & the Brim', sub: '帽模与帽缘' },
-            { n: '04', t: 'A Cultural Industry', sub: '一种文化产业' }
-          ]
-        },
-        {
-          t: 'Poetry in Hats', sub: '《帽饰有诗意》', meta: 'Edited by Hattershub', src: 'assets/book-poetry.webp', year: '2020',
-          publisher: 'Hattershub · 帽仕汇', pages: '192 pp.', format: 'Softcover · 17 × 24 cm',
-          tagline: 'When verse meets the brim — a slim volume of poems gathered around the hat.',
-          body: 'A collaborative anthology assembled by the Hattershub editorial team: classical Chinese verse, contemporary Mandarin poetry, and translated fragments from European literature, each pairing a line of poetry with a single hat photographed in the Foremost archive.',
-          chapters: [
-            { n: '01', t: 'Of Wind & Brim', sub: '风与帽缘' },
-            { n: '02', t: 'Travelers’ Hats', sub: '行旅之帽' },
-            { n: '03', t: 'Mourning & Memory', sub: '哀与记' },
-            { n: '04', t: 'New Voices', sub: '新声' }
-          ]
-        },
-        {
-          t: 'Ecuador: The Hometown of Panama Hats', sub: '《厄瓜多尔·巴拿马草帽的故乡》', meta: 'By Jeffrey Sun & Zhou Wei', src: 'assets/book-ecuador.webp', year: '2018',
-          publisher: 'Foremost Press · 富美出版', pages: '288 pp.', format: 'Hardcover · 22 × 28 cm',
-          tagline: 'Six weeks in the Andes, with the weavers who make the world’s finest straw hats.',
-          body: 'Jeffrey Sun and Zhou Wei spent six weeks in Cuenca and the highland villages of Azuay, documenting the toquilla-straw weavers whose craft predates the name "Panama hat" by three centuries. The book pairs reportage with technical drawings of weaves and a glossary of regional terminology.',
-          chapters: [
-            { n: '01', t: 'Cuenca, at Dawn', sub: '黎明的昆卡' },
-            { n: '02', t: 'The Toquilla Straw', sub: '托基亚草' },
-            { n: '03', t: 'A Day in Pile', sub: '皮莱的一天' },
-            { n: '04', t: 'How a Hat is Born', sub: '一顶帽子的诞生' }
-          ]
-        }
+        { t: 'Unveiling Crowned Elegance', sub: '《顶尚风华》', meta: 'Edited by Jeffrey Sun', src: 'assets/books/dingshang.jpg',
+          tagline: 'Hat marks the beginning of human civilisation.' },
+        { t: 'HeadWear · The Foremost', sub: '《头等大饰》', meta: 'By Jeffrey Sun', src: 'assets/books/toudeng.jpg' },
+        { t: 'Imaginative Thoughts', sub: '《随心琐语》', meta: 'By Jeffrey Sun', src: 'assets/books/suixin.jpg',
+          tagline: 'Gathered reflections of the Hat Brother. An English edition of 101 pieces followed.' },
+        { t: 'Poetry in Hats', sub: '《帽饰有诗意》', meta: 'By Jeffrey Sun', src: 'assets/books/poetry.jpg' },
+        { t: 'Ecuador: The Home of Panama Hats', sub: '《厄瓜多尔：巴拿马草帽的故乡》', meta: 'With Zhou Wei', src: 'assets/books/ecuador.webp', year: '2018' },
+        { t: '50 Ineffective Behaviors that Deplete Performance', sub: '《偷走绩效的50个无效行为》', meta: 'By Jeffrey Sun', src: 'assets/books/touzou.jpg', year: '2018' },
+        { t: 'Great Ambitions, Great World', sub: '《大情怀大世界：张謇的企业家精神》', meta: 'By Jeffrey Sun', src: 'assets/books/zhangjian.jpg' },
+        { t: 'SU SHU · The Book of Superlicity', sub: '《素书》', meta: 'Translated into English by Jeffrey Sun', src: 'assets/books/sushu.jpg' }
       ],
-      caseLabel: 'More',
-      seriesLabel: 'Volume',
-      backLabel: 'Back to Books',
-      chaptersLabel: 'Chapters',
       forthcoming: {
-        eyebrow: 'To be published',
-        kicker: 'Forthcoming',
+        eyebrow: 'Translation',
+        kicker: 'Carried into English',
         title: 'DAO',
-        subtitle: '《道德经》',
-        body: 'A long-anticipated translation and meditation on Laozi’s Dao De Jing — a quiet conversation between ancient wisdom and the maker’s life.',
+        subtitle: '《道德经》· Chapters 1–81, Chinese and English, with Keys to Dao',
+        body: 'A line-by-line rendering of Laozi, each chapter followed by his own "Keys to Dao" — not commentary on the text so much as notes from a life spent making things.',
         lines: [
-          { en: 'By retreating to advance, one takes the lead.', zh: '以退为进，方居其首。' },
-          { en: 'He who knows others is wise. He who knows himself is enlightened.', zh: '知人者智，自知者明。' },
-          { en: 'To advance wisely, learn first how to retreat with grace.', zh: '知止者，虽退而未败。' }
+          { en: 'Wisdom lies within.', zh: '智慧本自具足。' },
+          { en: 'Self-awareness is the root of clarity; self-deception the seed of chaos.', zh: '自觉是澄明之根，自欺是混乱之源。' }
         ]
       }
     },
@@ -309,71 +277,31 @@ const CONTENT = {
       eyebrow: '出版著作',
       number: '02 / 书作',
       heading: '一座「<em>帽饰</em>」的纸上博物馆。',
-      legend: '已出版四部著作——从厄瓜多尔高原到帽缘的哲学。另有《道德经》译读，即将面世。',
+      legend: '著作与主编七部，另将两部古籍带入英文——从厄瓜多尔高原到帽缘的哲学。',
+      backLabel: '返回',
+      seriesLabel: '著作',
+      chaptersLabel: '目录',
       items: [
-        {
-          t: '《顶南风华》', sub: 'Unveiling Crowned Elegance', meta: '孙建华 主编', src: 'assets/book-elegance.webp', year: '2022',
-          publisher: '富美出版', pages: '328 页', format: '精装 · 24 × 30 cm',
-          tagline: '一部冠冕、礼仪与"佩戴之沉静权威"的影像志。',
-          body: '历经两年田野调查与档案研究编纂——从皇室到婚礼，追溯东亚与东南亚仪式性帽饰的源流。摄影由富美团队完成，文字由历史学者与当代制帽师共同撰写。',
-          chapters: [
-            { n: '01', t: 'Court & Crown', sub: '宫廷与冠冕' },
-            { n: '02', t: 'Ritual Threads', sub: '仪礼之线' },
-            { n: '03', t: 'The Bride’s Headdress', sub: '婚冠之美' },
-            { n: '04', t: 'Modern Reinterpretations', sub: '当代重述' }
-          ]
-        },
-        {
-          t: '《头等大饰》', sub: 'Headwear · The Foremost', meta: '孙建华 著', src: 'assets/book-headwear.webp', year: '2021',
-          publisher: '富美出版', pages: '256 页', format: '精装 · 21 × 28 cm',
-          tagline: '一位制帽人的宣言——三十年的执念，一缘一沿。',
-          body: '半部回忆录，半部技艺图谱。孙建华讲述富美集团的创立、工坊的纪律，以及指导每一顶帽子诞生的哲学。每一章配有手绘示意图。',
-          chapters: [
-            { n: '01', t: '起点 · 一九九六', sub: 'Beginnings · 1996' },
-            { n: '02', t: '材料即论证', sub: 'Material as Argument' },
-            { n: '03', t: '帽模与帽缘', sub: 'The Block & the Brim' },
-            { n: '04', t: '一种文化产业', sub: 'A Cultural Industry' }
-          ]
-        },
-        {
-          t: '《帽饰有诗意》', sub: 'Poetry in Hats', meta: '帽仕汇 编', src: 'assets/book-poetry.webp', year: '2020',
-          publisher: '帽仕汇', pages: '192 页', format: '平装 · 17 × 24 cm',
-          tagline: '当诗意遇见帽缘——一本以帽为题的诗集。',
-          body: '由帽仕汇编辑团队组织的合集：古典汉诗、当代华语诗作、欧洲文学译片，每一则诗句配以富美档案中的一顶帽子。',
-          chapters: [
-            { n: '01', t: '风与帽缘', sub: 'Of Wind & Brim' },
-            { n: '02', t: '行旅之帽', sub: 'Travelers’ Hats' },
-            { n: '03', t: '哀与记', sub: 'Mourning & Memory' },
-            { n: '04', t: '新声', sub: 'New Voices' }
-          ]
-        },
-        {
-          t: '《厄瓜多尔：巴拿马草帽的故乡》', sub: 'Ecuador: The Hometown of Panama Hats', meta: '孙建华 · 周伟 著', src: 'assets/book-ecuador.webp', year: '2018',
-          publisher: '富美出版', pages: '288 页', format: '精装 · 22 × 28 cm',
-          tagline: '在安第斯山脉的六周——与世界上最精致草编帽的编织者同行。',
-          body: '孙建华与周伟在昆卡及阿苏艾省的高地村落驻留六周，记录托基亚草编织者——他们的技艺比"巴拿马帽"这个名字早了三个世纪。书中报道、技术图解与地方术语词汇并置。',
-          chapters: [
-            { n: '01', t: '黎明的昆卡', sub: 'Cuenca, at Dawn' },
-            { n: '02', t: '托基亚草', sub: 'The Toquilla Straw' },
-            { n: '03', t: '皮莱的一天', sub: 'A Day in Pile' },
-            { n: '04', t: '一顶帽子的诞生', sub: 'How a Hat is Born' }
-          ]
-        }
+        { t: '《顶尚风华》', sub: 'Unveiling Crowned Elegance', meta: '孙建华 编', src: 'assets/books/dingshang.jpg',
+          tagline: '帽子是人类文明开始的标志。' },
+        { t: '《头等大饰》', sub: 'HeadWear · The Foremost', meta: '孙建华 著', src: 'assets/books/toudeng.jpg' },
+        { t: '《随心琐语》', sub: 'Imaginative Thoughts', meta: '孙建华 著', src: 'assets/books/suixin.jpg',
+          tagline: '帽子哥感悟集粹。后有英文版一〇一篇。' },
+        { t: '《帽饰有诗意》', sub: 'Poetry in Hats', meta: '孙建华 著', src: 'assets/books/poetry.jpg' },
+        { t: '《厄瓜多尔：巴拿马草帽的故乡》', sub: 'Ecuador: The Home of Panama Hats', meta: '与周伟 合著', src: 'assets/books/ecuador.webp', year: '2018' },
+        { t: '《偷走绩效的50个无效行为》', sub: '50 Ineffective Behaviors', meta: '孙建华 著', src: 'assets/books/touzou.jpg', year: '2018' },
+        { t: '《大情怀大世界：张謇的企业家精神》', sub: 'Great Ambitions, Great World', meta: '孙建华 著', src: 'assets/books/zhangjian.jpg' },
+        { t: '《素书》', sub: 'SU SHU · The Book of Superlicity', meta: '孙建华 英译', src: 'assets/books/sushu.jpg' }
       ],
-      caseLabel: '更多',
-      seriesLabel: '卷册',
-      backLabel: '返回书作列表',
-      chaptersLabel: '章节',
       forthcoming: {
-        eyebrow: '未来出版',
-        kicker: '即将面世',
-        title: '《道德经》',
-        subtitle: 'DAO',
-        body: '帽子哥重笔译读《道德经》——让古老的智慧与当下的实践，进行一场安静的对话。',
+        eyebrow: '译著',
+        kicker: '带入英文',
+        title: 'DAO',
+        subtitle: '《道德经》· 一至八十一章 中英对照，附「道之钥」',
+        body: '逐章逐句的中英对照，每章之后是他自己写的「道之钥」——与其说是解经，不如说是一个做东西的人留下的笔记。',
         lines: [
-          { en: 'By retreating to advance, one takes the lead.', zh: '以退为进，方居其首。' },
-          { en: 'He who knows others is wise. He who knows himself is enlightened.', zh: '知人者智，自知者明。' },
-          { en: 'To advance wisely, learn first how to retreat with grace.', zh: '知止者，虽退而未败。' }
+          { en: 'Wisdom lies within.', zh: '智慧本自具足。' },
+          { en: 'Self-awareness is the root of clarity; self-deception the seed of chaos.', zh: '自觉是澄明之根，自欺是混乱之源。' }
         ]
       }
     }

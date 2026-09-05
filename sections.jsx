@@ -632,7 +632,15 @@ function Books({ lang }) {
             <button type="button" className="book-card" data-idx={i} key={i} onClick={() => openIdx(i)} aria-label={`Open ${it.t}`}>
                 <div className="book-shelf">
                   <div className="book-cover">
-                    <img src={it.src} alt={it.t} draggable="false"  loading="lazy" />
+                    <img src={it.src} alt={it.t} draggable="false" loading="lazy"
+                      onError={(e) => {
+                        e.currentTarget.style.display = 'none';
+                        e.currentTarget.parentNode.classList.add('book-cover--none');
+                      }} />
+                    <span className="book-cover-fallback">
+                      <span className="bcf-t">{it.t}</span>
+                      <span className="bcf-s">{it.sub}</span>
+                    </span>
                   </div>
                   <div className="book-shadow" />
                 </div>
@@ -642,8 +650,7 @@ function Books({ lang }) {
                   <div className="book-sub">{it.sub}</div>
                   <div className="book-meta">
                     <span>{it.meta}</span>
-                    <span className="dot">·</span>
-                    <span>{it.year}</span>
+                    {it.year && <><span className="dot">·</span><span>{it.year}</span></>}
                   </div>
                 </div>
               </button>
@@ -666,19 +673,20 @@ function Books({ lang }) {
               <div className="po-hero-meta"><span className="po-eb">{b.seriesLabel}</span></div>
               <h2 className="po-title">{item.t}</h2>
               <div className="po-sub">{item.sub}</div>
-              <div className="po-tagline">{item.tagline}</div>
+              {item.tagline && <div className="po-tagline">{item.tagline}</div>}
             </div>
-            <div className="po-cover po-cover--book"><img src={item.src} alt={item.t}  loading="lazy" /></div>
+            <div className="po-cover po-cover--book"><img src={item.src} alt={item.t} loading="lazy" onError={(e) => { e.currentTarget.closest('.po-cover').style.display = 'none'; }} /></div>
             <div className="po-body">
               <div className="po-meta-col">
-                <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Year' : '年份'}</span><span className="po-meta-v">{item.year}</span></div>
+                {item.year && <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Year' : '年份'}</span><span className="po-meta-v">{item.year}</span></div>}
                 <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Author' : '作者'}</span><span className="po-meta-v">{item.meta}</span></div>
-                <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Publisher' : '出版'}</span><span className="po-meta-v">{item.publisher}</span></div>
-                <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Pages' : '页数'}</span><span className="po-meta-v">{item.pages}</span></div>
-                <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Format' : '装帧'}</span><span className="po-meta-v">{item.format}</span></div>
+                {item.publisher && <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Publisher' : '出版'}</span><span className="po-meta-v">{item.publisher}</span></div>}
+                {item.pages && <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Pages' : '页数'}</span><span className="po-meta-v">{item.pages}</span></div>}
+                {item.format && <div className="po-meta-row"><span className="po-meta-k">{lang === 'en' ? 'Format' : '装帧'}</span><span className="po-meta-v">{item.format}</span></div>}
               </div>
-              <p className="po-essay">{item.body}</p>
+              {item.body && <p className="po-essay">{item.body}</p>}
             </div>
+            {item.chapters && item.chapters.length > 0 &&
             <div className="po-frames">
               <div className="po-frames-head">
                 <span className="po-eb">{b.chaptersLabel}</span>
@@ -695,7 +703,7 @@ function Books({ lang }) {
                   </li>
               )}
               </ul>
-            </div>
+            </div>}
             <div className="po-footer">
               <button className="po-back" type="button" onClick={() => setActive(null)}>
                 <span aria-hidden="true">←</span>
