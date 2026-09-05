@@ -45,7 +45,7 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>Founder, Foremost Group</strong> — design, R&D, production and distribution of headwear since 1996.' },
-        { n: '02', text: '<strong>Founder &amp; curator, Nantong Foremost Hats Museum</strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
+        { n: '02', text: '<strong>Founder &amp; curator, <a href="https://hatsmuseum.org/" target="_blank" rel="noopener">Nantong Foremost Hats Museum</a></strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
         { n: '03', text: '<strong>Founder, HATTERS’ HUB</strong> — Shanghai.' },
         { n: '04', text: '<strong>Director, Hats &amp; Accessories R&amp;D Centre</strong>, China National Garment Association.' },
         { n: '05', text: '<strong>Initiator, 920 China Hat Festival</strong> &amp; China International Hat Design Competition.' },
@@ -64,7 +64,7 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>富美集团创始人</strong>——自 1996 年起，深耕帽饰设计、研发、生产与销售。' },
-        { n: '02', text: '<strong>南通市富美帽饰博物馆创办人、馆长</strong>——展陈面积 2000 m²，藏品 7000 件。' },
+        { n: '02', text: '<strong><a href="https://hatsmuseum.org/" target="_blank" rel="noopener">南通市富美帽饰博物馆</a>创办人、馆长</strong>——展陈面积 2000 m²，藏品 7000 件。' },
         { n: '03', text: '<strong>上海帽仕汇创始人</strong>（HATTERS’ HUB）。' },
         { n: '04', text: '<strong>中国服装协会帽饰研发中心主任</strong>。' },
         { n: '05', text: '<strong>「920 中国帽子节」</strong>及中国国际帽饰设计大赛发起人。' },
@@ -77,28 +77,28 @@ const CONTENT = {
       eyebrow: 'Featured Work',
       number: '05 / Sculpture',
       heading: 'The <em>Self</em> beneath the hats.',
-      workNo: 'Work No. 001 · 2024',
+      workNo: 'Public sculpture · Wulonghui Talent Park, Nantong',
       title: 'Identity <em>and the</em> Self',
-      quote: '“No matter what hats are on your head, beneath them is yourself. External identities can be changed — but your inner self is eternal.”',
+      quote: '“No matter what hats are on your head, beneath them is yourself. External identities can be changed, but your inner self is eternal.”',
       meta: [
-        { k: 'Material', v: 'Resin · Pigment · Wood plinth' },
-        { k: 'Series', v: 'Identity / 2024' },
-        { k: 'Creator', v: 'Jeffrey Sun (Hat Bro.)' },
-        { k: 'Designer', v: 'Rena Qian × AI' }
+        { k: 'Year', v: '2025' },
+        { k: 'Edition', v: 'Brass · H 61 × W 33 × D 14 cm · 6.75 kg' },
+        { k: 'Creator', v: 'Jeffrey Sun (Hat Brother)' },
+        { k: 'Note', v: 'Unveiled on 10 December at Wulonghui Talent Park, Chongchuan, Nantong, as a donated public artwork. The artist Xu Bin Jueyi described it as possibly among the largest sculptures made with AI-assisted generation.' }
       ]
     },
     zh: {
       eyebrow: '主作品',
       number: '05 / 雕塑',
       heading: '帽下，是<em>自我</em>。',
-      workNo: '编号 No. 001 · 2024',
+      workNo: '公共雕塑 · 南通崇川区五龙汇人才公园',
       title: '身份<em>与</em>自我',
-      quote: '「无论你头顶戴着多少帽子，帽下仍是你自己。外在的身份可以更换，内在的自我恒常如一。」',
+      quote: '「无论有什么帽子，头颅之下是你自己，外在身份可以更换，内在自我才是永恒。」',
       meta: [
-        { k: '材质', v: '树脂 · 颜料 · 木质底座' },
-        { k: '系列', v: '身份系列 / 2024' },
-        { k: '创作人', v: '孙建华（帽子哥）' },
-        { k: '设计师', v: 'Rena Qian × AI' }
+        { k: '创作年份', v: '2025' },
+        { k: '登记版本', v: '黄铜 · H 61 × W 33 × D 14 cm · 6.75 kg' },
+        { k: '创作者', v: '孙建华（帽子哥）' },
+        { k: '说明', v: '12 月 10 日作为捐赠公共艺术在崇川区五龙汇人才公园揭幕；艺术家徐彬觉一评价其可能是目前全球规模最大的、融合 AI 技术生成的雕塑之一。' }
       ]
     }
   },
@@ -107,14 +107,14 @@ const CONTENT = {
       eyebrow: 'Works',
       number: '03 / Sculpture series',
       heading: 'Opposites <em>coexisting</em>.',
-      legend: 'Six works in bronze and woven texture — a meditation on concealment and revelation, on roughness as self-definition, and on the weight of what we choose to bear.',
+      legend: 'Six works — figures, hat forms and woven textures — alongside the public sculpture Identity and the Self. Registered works of 2025 include Bright but Not Dazzling and What Remains Is Plainness, both in mirror-finished stainless steel.',
       items: [
-        { n: '/01', tag: 'Bronze · 2024', t: 'The Wisdom of Concealment & Revelation', src: 'assets/sculpture-concealment.webp', subtitle: 'True wisdom lies in being just right — neither fully concealed nor fully revealed.', span: 'span-7', orient: 'landscape' },
-        { n: '/02', tag: 'Bronze · 2024', t: 'To Bear or Not to Bear', src: 'assets/sculpture-bear.webp', subtitle: 'A hat too big will crush you; one that fits, lets you stand upright.', span: 'span-5', orient: 'portrait' },
-        { n: '/03', tag: 'Texture', t: 'Opposites Coexisting — IV', src: 'assets/sculpture1.webp', subtitle: 'A shining mirror gathers dust; plainness only grows more prominent.', span: 'span-5', orient: 'portrait' },
-        { n: '/04', tag: 'Texture', t: 'Opposites Coexisting — V', src: 'assets/sculpture4.webp', subtitle: 'Roughness — not passive hiding, but active self-definition.', span: 'span-7', orient: 'landscape' },
-        { n: '/05', tag: 'Form', t: 'The Wisdom of Concealment', src: 'assets/sculpture2.webp', subtitle: 'Spiral inward — the form that hides itself.', span: 'span-6', orient: 'portrait' },
-        { n: '/06', tag: 'Form', t: 'To Bear or Not to Bear · Study', src: 'assets/sculpture3.webp', subtitle: 'A study in weight, balance, and bearing.', span: 'span-6', orient: 'portrait' }
+        { n: '/01', tag: 'Figure', t: 'The Wisdom of Concealment & Revelation', src: 'assets/sculpture-concealment.webp', span: 'span-7', orient: 'landscape' },
+        { n: '/02', tag: 'Figure', t: 'To Bear or Not to Bear', src: 'assets/sculpture-bear.webp', span: 'span-5', orient: 'portrait' },
+        { n: '/03', tag: 'Texture', t: 'Opposites Coexisting — IV', src: 'assets/sculpture1.webp', span: 'span-5', orient: 'portrait' },
+        { n: '/04', tag: 'Texture', t: 'Opposites Coexisting — V', src: 'assets/sculpture4.webp', span: 'span-7', orient: 'landscape' },
+        { n: '/05', tag: 'Form', t: 'The Wisdom of Concealment', src: 'assets/sculpture2.webp', span: 'span-6', orient: 'portrait' },
+        { n: '/06', tag: 'Form', t: 'To Bear or Not to Bear · Study', src: 'assets/sculpture3.webp', span: 'span-6', orient: 'portrait' }
       ]
     },
     zh: {
@@ -123,28 +123,28 @@ const CONTENT = {
       heading: '矛盾<em>共生</em>。',
       legend: '一组六件作品——以青铜与肌理为语，讲述遮蔽与显现的智慧、粗粙作为主动的自我定义，以及我们所选择承担的重量。',
       items: [
-        { n: '/01', tag: '青铜 · 2024', t: '藏与显的智慧', src: 'assets/sculpture-concealment.webp', subtitle: '真正的智慧不在尽藏，亦不在尽显，而在「恰到好处」。', span: 'span-7', orient: 'landscape' },
-        { n: '/02', tag: '青铜 · 2024', t: '承担与否', src: 'assets/sculpture-bear.webp', subtitle: '太大的帽子会压垮你；合宜的，方能让你挺立而行。', span: 'span-5', orient: 'portrait' },
-        { n: '/03', tag: '肌理', t: '矛盾共生 IV', src: 'assets/sculpture1.webp', subtitle: '明镜亦惹尘；素朴愈显其形。', span: 'span-5', orient: 'portrait' },
-        { n: '/04', tag: '肌理', t: '矛盾共生 V', src: 'assets/sculpture4.webp', subtitle: '粗粝并非消极的遮蔽，而是主动的自我定义。', span: 'span-7', orient: 'landscape' },
-        { n: '/05', tag: '形态', t: '藏与显的形态', src: 'assets/sculpture2.webp', subtitle: '向内旋入——隐于形内的形。', span: 'span-6', orient: 'portrait' },
-        { n: '/06', tag: '形态', t: '承担与否 · 习作', src: 'assets/sculpture3.webp', subtitle: '关于重量、平衡与承担的研究。', span: 'span-6', orient: 'portrait' }
+        { n: '/01', tag: '人像', t: '藏与显的智慧', src: 'assets/sculpture-concealment.webp', span: 'span-7', orient: 'landscape' },
+        { n: '/02', tag: '人像', t: '承担与否', src: 'assets/sculpture-bear.webp', span: 'span-5', orient: 'portrait' },
+        { n: '/03', tag: '肌理', t: '矛盾共生 IV', src: 'assets/sculpture1.webp', span: 'span-5', orient: 'portrait' },
+        { n: '/04', tag: '肌理', t: '矛盾共生 V', src: 'assets/sculpture4.webp', span: 'span-7', orient: 'landscape' },
+        { n: '/05', tag: '形态', t: '藏与显的形态', src: 'assets/sculpture2.webp', span: 'span-6', orient: 'portrait' },
+        { n: '/06', tag: '形态', t: '承担与否 · 习作', src: 'assets/sculpture3.webp', span: 'span-6', orient: 'portrait' }
       ]
     }
   },
   philosophy: {
     en: {
       eyebrow: 'Philosophy',
-      number: '04 / Whispers of wisdom',
+      number: '04 / Imaginative thoughts',
       heading: 'On retreat <em>as advance</em>.',
       quote: 'Dao, Virtue, Benevolence, Righteousness, Propriety — <em>five</em>, but one.',
-      attr: '— from《Whispers of Wisdom》',
+      attr: '— from Imaginative Thoughts《随心琐语》',
       items: [
         { n: '01', t: 'Self-knowledge', p: 'He who knows others is wise. He who knows himself is enlightened.' },
         { n: '02', t: 'Discipline → freedom', p: 'Freedom is premised on self-discipline. Without self-discipline, there is no freedom.' },
         { n: '03', t: 'Live broadcast', p: 'Life has no “if” — only a live broadcast. Find methods for the next success rather than excuses for the last failure.' },
-        { n: '04', t: 'On bearing', p: 'A hat that is too big will crush you; a suitable one lets you stand upright with confidence.' },
-        { n: '05', t: 'The just-right', p: 'True wisdom lies neither in complete concealment nor in full exposure — but in being just right.' }
+        { n: '04', t: 'Bright, not dazzling', p: 'Bright but not dazzling; leading without pressing. — Keys to Dao, ch. 58' },
+        { n: '05', t: 'What remains', p: 'What remains is plainness, not the gleaming.' }
       ]
     },
     zh: {
@@ -157,8 +157,8 @@ const CONTENT = {
         { n: '01', t: '自知', p: '知人者智，自知者明。' },
         { n: '02', t: '自律即自由', p: '自由的前提是自律。没有自律，就没有自由。' },
         { n: '03', t: '生命直播', p: '生命没有如果，只有直播。不要为失败找借口，要为成功找方法。' },
-        { n: '04', t: '承担之法', p: '太大的帽子会压垮你；合宜的帽子，方能让你挺立而行。' },
-        { n: '05', t: '恰到好处', p: '真正的智慧不在尽藏，亦不在尽显，而在「恰到好处」。' }
+        { n: '04', t: '光而不耀', p: '光而不耀，引领却不施压。——「道之钥」第五十八章' },
+        { n: '05', t: '留存', p: '留存的是素朴，而非光耀。' }
       ]
     }
   },
@@ -305,27 +305,18 @@ const CONTENT = {
       eyebrow: 'Photography',
       number: '06 / Photographs',
       heading: 'Time, <em>weight</em>, water.',
-      legend: 'A trilogy of photographs by Jeffrey Sun — fragments of attention from a life lived between studio and travel.',
+      legend: 'Three photographic series by Jeffrey Sun — Fruits of Time, Gravity, Shadow on Water.',
       items: [
         {
           t: 'Fruits of Time', sub: '《时间的果实》', src: 'assets/photo-fruits.webp',
-          year: '2019 — 2023', place: 'Studio · Beijing',
-          tagline: 'A slow study of ripening, decay, and the patience of light.',
-          body: 'Across four seasons in a north-facing studio, Jeffrey Sun photographed the same arrangement of fruit at the same hour of day. What began as a still-life exercise became a meditation on duration — on how attention itself ripens when held long enough against a single subject.',
           frames: ['assets/photo-fruits.webp','assets/photo-gravity.webp','assets/photo-shadow.webp','assets/photo-fruits.webp','assets/photo-gravity.webp']
         },
         {
           t: 'Gravity', sub: '《重》', src: 'assets/photo-gravity.webp',
-          year: '2021', place: 'Foundry · Hebei',
-          tagline: 'On weight, surface, and the dignity of unfinished things.',
-          body: 'Made over six weeks at the foundry where his bronze sculptures are cast, this series turns away from the finished work and toward the floor: pour residue, sand, the marks left by hands that move tons of metal each day. The frames argue that gravity is not a force, but a kind of authorship.',
           frames: ['assets/photo-gravity.webp','assets/photo-fruits.webp','assets/photo-shadow.webp','assets/photo-gravity.webp','assets/photo-fruits.webp']
         },
         {
           t: 'Shadow on Water', sub: '《水影》', src: 'assets/photo-shadow.webp',
-          year: '2018 — 2024',  place: 'West Lake · Hangzhou',
-          tagline: 'Six years of returning to the same surface at the same hour.',
-          body: 'Photographed from the same wooden pier on West Lake — sometimes weekly, sometimes a year apart — these images record what the water does with morning light. A long-form practice of returning, the series treats the lake as a collaborator whose mood is the only variable that matters.',
           frames: ['assets/photo-shadow.webp','assets/photo-fruits.webp','assets/photo-gravity.webp','assets/photo-shadow.webp','assets/photo-fruits.webp']
         }
       ],
@@ -342,23 +333,14 @@ const CONTENT = {
       items: [
         {
           t: '《时间的果实》', sub: 'Fruits of Time', src: 'assets/photo-fruits.webp',
-          year: '2019 — 2023', place: '工作室 · 北京',
-          tagline: '关于成熟、腐败与光的耐心。',
-          body: '在朝北的工作室里，孙建华以四季为单位，每日同一时刻拍摄同一组水果。最初只是静物练习，最终却成了一段关于"持续注视"的冥想——当注意力足够长久地停留在一个对象上时，注意力本身也开始成熟。',
           frames: ['assets/photo-fruits.webp','assets/photo-gravity.webp','assets/photo-shadow.webp','assets/photo-fruits.webp','assets/photo-gravity.webp']
         },
         {
           t: '《重》', sub: 'Gravity', src: 'assets/photo-gravity.webp',
-          year: '2021', place: '铸造厂 · 河北',
-          tagline: '论重量、表面，与未完成之物的尊严。',
-          body: '在他的青铜雕塑铸造工厂中拍摄六周。镜头不再对准成品，而转向地面——浇铸的残渣、砂土、那些每天搬动数吨金属的手所留下的痕迹。这组作品提出：重力不是一种力，而是一种作者署名。',
           frames: ['assets/photo-gravity.webp','assets/photo-fruits.webp','assets/photo-shadow.webp','assets/photo-gravity.webp','assets/photo-fruits.webp']
         },
         {
           t: '《水影》', sub: 'Shadow on Water', src: 'assets/photo-shadow.webp',
-          year: '2018 — 2024', place: '西湖 · 杭州',
-          tagline: '六年间，在同一木栈桥的同一时刻返回。',
-          body: '从西湖一座木栈桥出发——有时每周，有时相隔一年——记录晨光在水面上的所作所为。这是一种"返回"的长期练习，把湖面当作合作者，它的心情是唯一重要的变量。',
           frames: ['assets/photo-shadow.webp','assets/photo-fruits.webp','assets/photo-gravity.webp','assets/photo-shadow.webp','assets/photo-fruits.webp']
         }
       ],

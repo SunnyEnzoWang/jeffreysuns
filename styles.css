@@ -2342,3 +2342,34 @@ section {
   .hero-plate figcaption { font-size: 10px; letter-spacing: 0.1em; gap: 3px; }
   .hero-plate .cap-sub { font-size: 10px; }
 }
+
+/* ============================================================
+   ① 首屏之下的版块与扉页首屏统一
+   原型语法:84px 极细衬线标题 + 一个词标成青绿斜体 + 编号/眉题网格。
+   改成书页语言:标题收到章名大小,强调词只保留斜体不再上色,
+   眉题与编号退成一行安静的页眉。
+   ============================================================ */
+.section-head {
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding-top: 26px;
+  margin-bottom: clamp(32px, 5vw, 48px);
+}
+.section-head .meta { flex-direction: row; align-items: baseline; gap: 18px; }
+.section-head h2 {
+  font-size: clamp(28px, 3.4vw, 46px);
+  line-height: 1.18;
+  letter-spacing: -0.005em;
+  font-weight: 400;
+  max-width: 26ch;
+}
+.section-head h2 em,
+.about-text p.lead em,
+.philo-quote em,
+.feature .section-head h2 em,
+.feature-text h3 em,
+.contact-headline em { color: inherit; font-style: italic; font-weight: inherit; }
+
+@media (max-width: 600px) {
+  .section-head h2 { font-size: 26px; }
+}
