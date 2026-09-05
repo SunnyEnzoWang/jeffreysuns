@@ -76,17 +76,17 @@ const CONTENT = {
   //  · 四届(2014/2015/2018/2023)= 孙董 2023 年访谈原话「我们公司…2014、2015、2018和2023年主办了四届“中国帽子节”」;
   //    2026 年《凤凰艺术》报道亦作「主办四届」
   //  · 引言 = 《管理者文集》孙董原文
-  //  · 2026 年 9 月 20 日 = 本届日期。主题、场地、嘉宾以官方公布为准,站上不写
+  //  · 2026 年 9 月 20 日 = 本届日期;「第五届」与「南通」= 2026-09-05 王晨锡确认。主题、场地、嘉宾以官方公布为准,站上不写
   festival: {
     en: {
       eyebrow: 'Festival',
       number: '02 / 920',
       heading: '920 <em>China Hat Festival</em>',
       dateISO: '2026-09-20',
-      dateLine: 'Sunday, 20 September 2026 · Nantong',
+      dateLine: 'Fifth edition · Sunday, 20 September 2026 · Nantong',
       countLabel: 'days to go', today: 'It is today.', past: 'Held on 20 September 2026',
       runin: '9 · 20.',
-      lead: 'The date Jeffrey Sun set aside for hats. He initiated the first China Hat Festival in 2014 and staged it again in 2015, 2018 and 2023 — designers, makers and people who simply love wearing hats, gathered for the hat. In 2026 the festival returns.',
+      lead: 'The date Jeffrey Sun set aside for hats. He initiated the first China Hat Festival in 2014 and staged it again in 2015, 2018 and 2023 — designers, makers and people who simply love wearing hats, gathered for the hat. In 2026 the fifth edition returns to Nantong.',
       quote: '“We hold the 920 Hat Festival to bring together people who love beauty and love hats — and they will bring more hat-lovers with them. A single spark can start a prairie fire.”',
       quoteBy: '— Jeffrey Sun, Collected Writings for Managers',
       histHead: 'Editions',
@@ -95,7 +95,7 @@ const CONTENT = {
         { y: '2015', t: 'Second edition' },
         { y: '2018', t: 'Third edition' },
         { y: '2023', t: 'Fourth edition' },
-        { y: '2026', t: '20 September · programme to be announced', now: true }
+        { y: '2026', t: 'Fifth edition · 20 September, Nantong · programme to be announced', now: true }
       ],
       note: 'Programme, venue and guests will be announced here and at hatsmuseum.org. Enquiries: <a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>',
       cta: 'Foremost Hats Museum · 920',
@@ -108,10 +108,10 @@ const CONTENT = {
       number: '02 / 920',
       heading: '920 <em>中国帽子节</em>',
       dateISO: '2026-09-20',
-      dateLine: '2026 年 9 月 20 日 · 周日 · 南通',
+      dateLine: '第五届 · 2026 年 9 月 20 日 · 周日 · 南通',
       countLabel: '天后', today: '就是今天。', past: '已于 2026 年 9 月 20 日举行',
       runin: '九 · 二〇。',
-      lead: '孙建华为帽子留出的日子。2014 年他发起首届「中国帽子节」，此后于 2015、2018、2023 年再办三届——设计师、匠人和爱戴帽子的人，为一顶帽子聚在一起。2026 年，帽子节回来了。',
+      lead: '孙建华为帽子留出的日子。2014 年他发起首届「中国帽子节」，此后于 2015、2018、2023 年再办三届——设计师、匠人和爱戴帽子的人，为一顶帽子聚在一起。2026 年，第五届在南通举行。',
       quote: '「我们举办 920 帽子节，把一批爱美爱帽的人集聚在一起，而这些人会带来更多的爱帽之人，星星之火可以燎原。」',
       quoteBy: '—— 孙建华，《管理者文集》',
       histHead: '历届',
@@ -120,7 +120,7 @@ const CONTENT = {
         { y: '2015', t: '第二届' },
         { y: '2018', t: '第三届' },
         { y: '2023', t: '第四届' },
-        { y: '2026', t: '9 月 20 日 · 详情即将公布', now: true }
+        { y: '2026', t: '第五届 · 9 月 20 日 · 南通 · 详情即将公布', now: true }
       ],
       note: '主题、场地与嘉宾将在此处与 hatsmuseum.org 公布。联络：<a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>',
       cta: '富美帽饰博物馆 · 920 专页',
