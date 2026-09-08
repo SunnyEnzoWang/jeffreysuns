@@ -45,7 +45,7 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>Founder, Foremost Group</strong> — design, R&D, production and distribution of headwear since 1996.' },
-        { n: '02', text: '<strong>Founder &amp; curator, <a href="https://hatsmuseum.org/" target="_blank" rel="noopener">Nantong Foremost Hats Museum</a></strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
+        { n: '02', text: '<strong>Founder &amp; curator, <a href="https://hatsmuseum.org/" target="_blank" rel="noopener">Foremost Hat Museum, Nantong</a></strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
         { n: '03', text: '<strong>Founder, HATTERS’ HUB</strong> — Shanghai.' },
         { n: '04', text: '<strong>Director, Hats &amp; Accessories R&amp;D Centre</strong>, China National Garment Association.' },
         { n: '05', text: '<strong>Initiator, 920 China Hat Festival</strong> &amp; China International Hat Design Competition.' },
@@ -98,7 +98,7 @@ const CONTENT = {
         { y: '2026', t: 'Fifth edition · 20 September, Nantong · programme to be announced', now: true }
       ],
       note: 'Programme, venue and guests will be announced here and at hatsmuseum.org. Enquiries: <a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>',
-      cta: 'Foremost Hats Museum · 920',
+      cta: 'Foremost Hat Museum · 920',
       ctaHref: 'https://hatsmuseum.org/festival',
       photoCap: 'The fourth China Hat Festival · 2023',
       initiator: 'Initiator · Jeffrey Sun (Hat Brother)'
@@ -263,7 +263,7 @@ const CONTENT = {
       cols: [
         { head: 'Studio', body: 'Foremost Hat Park<br/>Nantong, Jiangsu<br/>China' },
         { head: 'Email', body: '<a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>' },
-        { head: 'Museum', body: 'Foremost Hats Museum<br/>Open daily · 09:00–18:00' },
+        { head: 'Museum', body: 'Foremost Hat Museum, Nantong<br/>Open daily · by reservation' },
         { head: 'Festival', body: '920 China Hat Festival<br/>September 20, annual' }
       ],
       footL: '© 2026 Jeffrey Sun · 帽子哥',
@@ -276,7 +276,7 @@ const CONTENT = {
       cols: [
         { head: '工作室', body: '南通帽饰文创园<br/>江苏南通<br/>中国' },
         { head: '邮箱', body: '<a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>' },
-        { head: '博物馆', body: '富美帽饰博物馆<br/>全年无休 · 09:00–18:00' },
+        { head: '博物馆', body: '南通市富美帽饰博物馆<br/>每天开放 · 需提前预约' },
         { head: '节日', body: '920 中国帽子节<br/>每年 9 月 20 日' }
       ],
       footL: '© 2026 孙建华 · 帽子哥',
