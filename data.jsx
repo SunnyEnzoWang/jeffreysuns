@@ -45,7 +45,7 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>Founder, Foremost Group</strong> — design, R&D, production and distribution of headwear since 1996.' },
-        { n: '02', text: '<strong>Founder &amp; curator, <a href="https://hatsmuseum.org/" target="_blank" rel="noopener">Nantong Foremost Hat Museum</a></strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
+        { n: '02', text: '<strong>Founder &amp; curator, <a href="https://foremosthatmuseum.org/" target="_blank" rel="noopener">Nantong Foremost Hat Museum</a></strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
         { n: '03', text: '<strong>Founder, HATTERS’ HUB</strong> — Shanghai.' },
         { n: '04', text: '<strong>Director, Hats &amp; Accessories R&amp;D Centre</strong>, China National Garment Association.' },
         { n: '05', text: '<strong>Initiator, 920 China Hat Festival</strong> &amp; China International Hat Design Competition.' },
@@ -64,7 +64,7 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>富美集团创始人</strong>——自 1996 年起，深耕帽饰设计、研发、生产与销售。' },
-        { n: '02', text: '<strong><a href="https://hatsmuseum.org/" target="_blank" rel="noopener">南通市富美帽饰博物馆</a>创办人、馆长</strong>——展陈面积 2000 m²，藏品 7000 件。' },
+        { n: '02', text: '<strong><a href="https://foremosthatmuseum.org/" target="_blank" rel="noopener">南通市富美帽饰博物馆</a>创办人、馆长</strong>——展陈面积 2000 m²，藏品 7000 件。' },
         { n: '03', text: '<strong>上海帽仕汇创始人</strong>（HATTERS’ HUB）。' },
         { n: '04', text: '<strong>中国服装协会帽饰研发中心主任</strong>。' },
         { n: '05', text: '<strong>「920 中国帽子节」</strong>及中国国际帽饰设计大赛发起人。' },
@@ -97,9 +97,9 @@ const CONTENT = {
         { y: '2023', t: 'Fourth edition' },
         { y: '2026', t: 'Fifth edition · 20 September, Nantong · programme to be announced', now: true }
       ],
-      note: 'Programme, venue and guests will be announced here and at hatsmuseum.org. Enquiries: <a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>',
+      note: 'Programme, venue and guests will be announced here and at foremosthatmuseum.org. Enquiries: <a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>',
       cta: 'Foremost Hat Museum · 920',
-      ctaHref: 'https://hatsmuseum.org/festival',
+      ctaHref: 'https://foremosthatmuseum.org/festival',
       photoCap: 'The fourth China Hat Festival · 2023',
       initiator: 'Initiator · Jeffrey Sun (Hat Brother)'
     },
@@ -122,9 +122,9 @@ const CONTENT = {
         { y: '2023', t: '第四届' },
         { y: '2026', t: '第五届 · 9 月 20 日 · 南通 · 详情即将公布', now: true }
       ],
-      note: '主题、场地与嘉宾将在此处与 hatsmuseum.org 公布。联络：<a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>',
+      note: '主题、场地与嘉宾将在此处与 foremosthatmuseum.org 公布。联络：<a href="mailto:Jeffrey@hattershub.com">Jeffrey@hattershub.com</a>',
       cta: '富美帽饰博物馆 · 920 专页',
-      ctaHref: 'https://hatsmuseum.org/festival',
+      ctaHref: 'https://foremosthatmuseum.org/festival',
       photoCap: '第四届中国帽子节现场 · 2023',
       initiator: '发起人 · 孙建华（帽子哥）'
     }
