@@ -45,7 +45,7 @@ const CONTENT = {
       ],
       bullets: [
         { n: '01', text: '<strong>Founder, Foremost Group</strong> — design, R&D, production and distribution of headwear since 1996.' },
-        { n: '02', text: '<strong>Founder &amp; curator, <a href="https://hatsmuseum.org/" target="_blank" rel="noopener">Foremost Hat Museum, Nantong</a></strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
+        { n: '02', text: '<strong>Founder &amp; curator, <a href="https://hatsmuseum.org/" target="_blank" rel="noopener">Nantong Foremost Hat Museum</a></strong> — 2,000 m² of exhibition, 7,000 collected pieces.' },
         { n: '03', text: '<strong>Founder, HATTERS’ HUB</strong> — Shanghai.' },
         { n: '04', text: '<strong>Director, Hats &amp; Accessories R&amp;D Centre</strong>, China National Garment Association.' },
         { n: '05', text: '<strong>Initiator, 920 China Hat Festival</strong> &amp; China International Hat Design Competition.' },
